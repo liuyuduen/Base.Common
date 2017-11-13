@@ -1,0 +1,6 @@
+2017-11-11 11:58:22,761 [8940] ERROR Base.Utility.Log [(null)] <(null)>
+ - Specified key was too long; max key length is 767 bytes
+2017-11-11 11:58:23,352 [8940] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-11 11:58:55,484 [8944] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A332C08E-B0E2-4974-9240-EE7A52C67010}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Base.Utility</RootNamespace>
+    <AssemblyName>Base.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Lib\Base\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.2.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\Lib\IOC\Castle\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy">
+      <HintPath>..\Lib\IOC\Castle\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel">
+      <HintPath>..\Lib\IOC\Castle\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Model">
+      <HintPath>..\Lib\IOC\Castle\Castle.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\Lib\IOC\Castle\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.0.0, Culture=neutral, PublicKeyToken=ad1060f781377a81, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Lib\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\Lib\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ADHelper.cs" />
+    <Compile Include="Common\ExceptionHelper.cs" />
+    <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\PathHelper.cs" />
+    <Compile Include="Convert\DataToEntityHelper.cs" />
+    <Compile Include="Log\ILogHelp.cs" />
+    <Compile Include="Log\LogHelp.cs" />
+    <Compile Include="Security\ZipHelper.cs" />
+    <Compile Include="Security\CompressHelper.cs" />
+    <Compile Include="String\ByteHelper.cs" />
+    <Compile Include="Http\IpHelper.cs" />
+    <Compile Include="Http\IPScanerHelper.cs" />
+    <Compile Include="Convert\JsonHelper.cs" />
+    <Compile Include="Log\Log.cs" />
+    <Compile Include="Log\LogHelper.cs" />
+    <Compile Include="Http\MailHelper.cs" />
+    <Compile Include="WebService\ServiceHelper.cs" />
+    <Compile Include="Validate\HttpText.cs" />
+    <Compile Include="Validate\SortHelper.cs" />
+    <Compile Include="Convert\XmlHelper.cs" />
+    <Compile Include="Data\AccessHelper.cs" />
+    <Compile Include="Convert\DataHelper.cs" />
+    <Compile Include="Convert\HashtableHelper.cs" />
+    <Compile Include="Paging\PageHelper.cs" />
+    <Compile Include="Paging\PageParam.cs" />
+    <Compile Include="Convert\ModelConvertHelper.cs" />
+    <Compile Include="Data\OleDbModelHelper.cs" />
+    <Compile Include="Data\OleDbPageHelper.cs" />
+    <Compile Include="Data\SqlHelper.cs" />
+    <Compile Include="Data\SqlModelHelper.cs" />
+    <Compile Include="Data\SqlPageHelper.cs" />
+    <Compile Include="Enums\EnumHelper.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="File\DirFileHelper.cs" />
+    <Compile Include="Docment\ExcelHelper.cs" />
+    <Compile Include="File\FileDateSorterHelper.cs" />
+    <Compile Include="File\FileDownHelper.cs" />
+    <Compile Include="File\FileHelper.cs" />
+    <Compile Include="File\FileType.cs" />
+    <Compile Include="File\INIFileHelper.cs" />
+    <Compile Include="File\ReadHelper.cs" />
+    <Compile Include="File\SizeHelper.cs" />
+    <Compile Include="File\WebDownloadHelper.cs" />
+    <Compile Include="Http\HttpHelper.cs" />
+    <Compile Include="Http\NetHelper.cs" />
+    <Compile Include="Http\NetWorkHelper.cs" />
+    <Compile Include="Http\RequestHelper.cs" />
+    <Compile Include="IOC\CastleContainer.cs" />
+    <Compile Include="Model\LinqHelper.cs" />
+    <Compile Include="Convert\ListHelper.cs" />
+    <Compile Include="Model\ObjectReflectHelper.cs" />
+    <Compile Include="Model\ReflectorHelper.cs" />
+    <Compile Include="Convert\SerializerHelper.cs" />
+    <Compile Include="Payment\Mobao\MobaopayConfig.cs" />
+    <Compile Include="Payment\Mobao\MobaopayMerchant.cs" />
+    <Compile Include="Payment\Mobao\MobaopayQueryEntity.cs" />
+    <Compile Include="Payment\Mobao\MobaopayRefundEntity.cs" />
+    <Compile Include="Payment\Mobao\MobaopaySignUtil.cs" />
+    <Compile Include="Payment\PayIntFaceType.cs" />
+    <Compile Include="Payment\PaymentGateway.cs" />
+    <Compile Include="Payment\PaymentGatewayFactory.cs" />
+    <Compile Include="Payment\ZF\HttpHelp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\DESEncryptHelper.cs" />
+    <Compile Include="Security\Md5Helper.cs" />
+    <Compile Include="Security\SecurityHelper.cs" />
+    <Compile Include="String\DateHelper.cs" />
+    <Compile Include="Validate\FormatHelper.cs" />
+    <Compile Include="String\PinyinHelper.cs" />
+    <Compile Include="String\RandomHelper.cs" />
+    <Compile Include="Validate\RegularHelper.cs" />
+    <Compile Include="String\RMBHelper.cs" />
+    <Compile Include="String\SpitChar.cs" />
+    <Compile Include="Validate\SqlFilterHelper.cs" />
+    <Compile Include="String\StringHelper.cs" />
+    <Compile Include="Validate\ValidateHelper.cs" />
+    <Compile Include="Provider\CookieHelper.cs" />
+    <Compile Include="Image\ImageHelper.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Script\JSHelper.cs" />
+    <Compile Include="Script\ScriptHelper.cs" />
+    <Compile Include="Provider\SessionHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

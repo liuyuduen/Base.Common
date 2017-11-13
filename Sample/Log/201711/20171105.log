@@ -1,0 +1,32 @@
+2017-11-05 22:47:52,808 [5840] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 22:49:32,609 [3232] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 22:50:13,873 [5092] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 22:51:29,243 [5128] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 22:54:25,554 [2188] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 22:56:30,283 [4208] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:00:25,314 [8292] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:03:18,322 [7520] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:04:30,351 [8384] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:08:59,784 [7088] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:09:17,191 [7088] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-05 23:09:29,898 [6368] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:10:08,223 [6368] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:10:09,573 [6368] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-05 23:10:28,778 [5104] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-05 23:10:29,642 [5104] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。

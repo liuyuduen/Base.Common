@@ -1,0 +1,46 @@
+2017-11-06 23:27:45,556 [5192] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:32:16,829 [5596] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:34:12,021 [5264] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:34:12,021 [7460] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:37:25,749 [8904] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:44:25,464 [9420] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:48:10,484 [5364] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-06 23:48:49,376 [8776] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:49:03,658 [8776] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred while updating the entries. See the inner exception for details.
+2017-11-06 23:49:03,668 [8776] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-06 23:49:32,290 [8776] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:49:34,670 [8776] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred while updating the entries. See the inner exception for details.
+2017-11-06 23:49:34,682 [8776] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-06 23:52:24,925 [3536] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:52:26,196 [3536] ERROR Base.Utility.Log [(null)] <(null)>
+ - Specified key was too long; max key length is 767 bytes
+2017-11-06 23:52:26,500 [3536] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-06 23:52:51,140 [7260] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:52:51,226 [7260] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-06 23:53:06,078 [8100] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:53:18,022 [7660] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:53:18,085 [7660] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-06 23:57:56,479 [7608] INFO  Base.Utility.Log [(null)] <(null)>
+ - 执行User 打印日志
+2017-11-06 23:57:56,613 [7608] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。

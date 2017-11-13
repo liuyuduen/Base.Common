@@ -1,0 +1,13 @@
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Base.Utility.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Base.Utility.pdb
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\BouncyCastle.Crypto.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Castle.Core.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Castle.DynamicProxy.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Castle.MicroKernel.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Castle.Model.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Castle.Windsor.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\ICSharpCode.SharpZipLib.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\log4net.dll
+F:\project\Manager\Code\Manager\Base.Utility\bin\Release\Newtonsoft.Json.dll
+F:\project\Manager\Code\Manager\Base.Utility\obj\Release\Base.Utility.dll
+F:\project\Manager\Code\Manager\Base.Utility\obj\Release\Base.Utility.pdb

@@ -1,0 +1,15 @@
+F:\project\Manager\Code\Manager\Base.Cache\obj\Release\Base.Cache.csprojResolveAssemblyReference.cache
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Base.Cache.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Base.Cache.pdb
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Base.Utility.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\log4net.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\ICSharpCode.SharpZipLib.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Castle.MicroKernel.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Castle.Windsor.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\BouncyCastle.Crypto.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Newtonsoft.Json.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Castle.Core.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Castle.DynamicProxy.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Release\Base.Utility.pdb
+F:\project\Manager\Code\Manager\Base.Cache\obj\Release\Base.Cache.dll
+F:\project\Manager\Code\Manager\Base.Cache\obj\Release\Base.Cache.pdb
