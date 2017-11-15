@@ -21,11 +21,11 @@ namespace Sample.Controllers
         public ActionResult Index()
         {
             //Log.Info("执行User 打印日志");
-            Add();
-            Update();
-            GetUsers();
-            GetUser(); 
-            Delete();
+            //Add();
+            //Update();
+            //GetUsers();
+            //GetUser(); 
+            //Delete();
             return View();
         }
 
