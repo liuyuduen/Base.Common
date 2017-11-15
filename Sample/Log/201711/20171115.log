@@ -1,0 +1,136 @@
+2017-11-15 20:40:54,436 [3752] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+2017-11-15 20:40:54,481 [3752] ERROR Base.Utility.Log [(null)] <(null)>
+ - The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+2017-11-15 20:40:54,496 [2592] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+2017-11-15 20:40:56,495 [2592] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+2017-11-15 21:30:48,482 [7928] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+2017-11-15 21:30:50,484 [7928] ERROR Base.Utility.Log [(null)] <(null)>
+ - An error occurred accessing the database. This usually means that the connection to the database failed. Check that the connection string is correct and that the appropriate DbContext constructor is being used to specify it or find it in the application's config file. See http://go.microsoft.com/fwlink/?LinkId=386386 for information on DbContext and connections. See the inner exception for details of the failure.
+2017-11-15 21:34:28,630 [4364] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:35:38,421 [4364] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:37:03,928 [4364] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:39:46,644 [7928] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:40:35,961 [6412] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:41:02,078 [7928] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:47:41,483 [7952] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:48:19,514 [7944] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:48:31,802 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:49:28,078 [7952] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:50:44,167 [7952] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:51:00,006 [7952] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:51:45,444 [7952] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:51:56,286 [1060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:51:59,528 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:52:17,969 [1060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:52:31,091 [7952] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:53:22,245 [6648] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:53:38,195 [1060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:54:47,145 [3216] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:55:03,164 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:56:07,767 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:57:22,803 [7636] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:57:23,920 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:58:08,536 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 21:58:28,537 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:08:54,512 [3768] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:10:58,761 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:11:40,152 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:11:44,283 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:12:07,012 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:12:24,753 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:13:02,898 [2808] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:13:15,744 [7336] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:13:34,095 [4724] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:14:38,229 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:14:54,162 [4724] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:16:14,254 [3768] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:16:17,105 [8060] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:16:32,871 [7336] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:16:41,420 [6488] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:21:05,559 [4724] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:22:15,129 [8276] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:23:07,629 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:23:32,171 [8276] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:23:52,496 [6308] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:25:38,050 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:26:59,892 [6688] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:27:04,388 [6308] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:28:58,346 [4724] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:29:01,562 [7164] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:32:48,713 [7612] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:33:15,805 [6308] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:35:09,371 [7612] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:39:20,222 [5532] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:44:22,130 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:45:13,688 [8276] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:46:10,180 [8276] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:46:13,605 [4156] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:46:47,114 [5532] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:46:50,713 [6688] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
+2017-11-15 22:47:17,477 [4724] ERROR Base.Utility.Log [(null)] <(null)>
+ - 未将对象引用设置到对象的实例。
