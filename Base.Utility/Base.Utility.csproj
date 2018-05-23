@@ -94,7 +94,9 @@
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Common\ConfigHelper.cs" />
     <Compile Include="Common\PathHelper.cs" />
+    <Compile Include="Convert\EntityObjectExtentions.cs" />
     <Compile Include="Convert\DataToEntityHelper.cs" />
+    <Compile Include="Http\HttpHelper1.cs" />
     <Compile Include="Log\ILogHelp.cs" />
     <Compile Include="Log\LogHelp.cs" />
     <Compile Include="Security\ZipHelper.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Log\Log.cs" />
     <Compile Include="Log\LogHelper.cs" />
     <Compile Include="Http\MailHelper.cs" />
+    <Compile Include="WebService\WebServiceInvoker.cs" />
     <Compile Include="WebService\ServiceHelper.cs" />
     <Compile Include="Validate\HttpText.cs" />
     <Compile Include="Validate\SortHelper.cs" />
