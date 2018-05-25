@@ -42,6 +42,8 @@ namespace Base.Utility
         ///系统appSettings配置文件路径
         private static readonly string System_Config_Path = "SystemConfigPath";
 
+        private static readonly string WEBSERVICEBINDINGTYPE = "WebServiceBindingType";
+
 
         //定义电子邮箱用户名
         private static readonly string EMAIL_USER_NAME = "EmailUserName";
@@ -94,6 +96,8 @@ namespace Base.Utility
         /// IOC配置文件路径
         /// </summary>
         public static readonly string IocConfigPath;
+
+        public static readonly string WebServiceBindingType;
 
         /// <summary>
         /// 获得电子邮箱用户名
@@ -154,6 +158,8 @@ namespace Base.Utility
             SmtpServer = AppSettings(SMTP_SERVER);
             // 读取应用程序设置
             SysName = AppSettings(SYS_NAME);
+
+            WebServiceBindingType = AppSettings(WEBSERVICEBINDINGTYPE);
         }
 
         /// <summary>

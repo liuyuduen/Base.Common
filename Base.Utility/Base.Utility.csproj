@@ -108,6 +108,8 @@
     <Compile Include="Log\Log.cs" />
     <Compile Include="Log\LogHelper.cs" />
     <Compile Include="Http\MailHelper.cs" />
+    <Compile Include="WebService\ServiceChannelHelper.cs" />
+    <Compile Include="WebService\ServiceHostHelper.cs" />
     <Compile Include="WebService\WebServiceInvoker.cs" />
     <Compile Include="WebService\ServiceHelper.cs" />
     <Compile Include="Validate\HttpText.cs" />
@@ -177,7 +179,9 @@
     <Compile Include="Script\ScriptHelper.cs" />
     <Compile Include="Provider\SessionHelper.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Proxy\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5D3B000-8813-4182-B1BB-D8E56F75EA99}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{D77620D9-B753-456C-ABFB-C38BD6719C78}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Base.Sample.Host</RootNamespace>
-    <AssemblyName>Base.Sample.Host</AssemblyName>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -29,15 +31,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,27 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IProviderInterface.cs" />
-    <Compile Include="Mgmt\IMgmtUser.cs" />
-    <Compile Include="Mgmt\MgmtUser.cs" />
-    <Compile Include="ProviderInterface.cs" />
-    <Compile Include="Query\IQueryUser.cs" />
-    <Compile Include="Query\QueryUser.cs" />
-    <Compile Include="UserInterface.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Base.DataAccess\Base.DataAccess.csproj">
-      <Project>{d226c2d7-27a1-482d-9372-179a163a29f2}</Project>
-      <Name>Base.DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Base.Entity\Base.Entity.csproj">
-      <Project>{4b075025-ddab-497e-88ec-bdad284beb8d}</Project>
-      <Name>Base.Entity</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base.Sample.Host\Base.Sample.Host.csproj">
+      <Project>{c5d3b000-8813-4182-b1bb-d8e56f75ea99}</Project>
+      <Name>Base.Sample.Host</Name>
     </ProjectReference>
     <ProjectReference Include="..\Base.Utility\Base.Utility.csproj">
       <Project>{a332c08e-b0e2-4974-9240-ee7a52c67010}</Project>
       <Name>Base.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfServiceLibrary1\WcfServiceLibrary1.csproj">
+      <Project>{8f15e4e0-7942-440f-9dfa-54ca1997179a}</Project>
+      <Name>WcfServiceLibrary1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
