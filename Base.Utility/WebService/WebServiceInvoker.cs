@@ -9,7 +9,4 @@ using System.Reflection;
 using System.Text;
 
 namespace Base.Utility.WebService
-{ 
-<<<<<<< .mine}
-=======    }
->>>>>>> .theirs
+{ }

@@ -96,9 +96,9 @@
     <Compile Include="Common\PathHelper.cs" />
     <Compile Include="Convert\EntityObjectExtentions.cs" />
     <Compile Include="Convert\DataToEntityHelper.cs" />
+    <Compile Include="Docment\excel\ImportExcel.cs" />
     <Compile Include="Docment\word\DeriveWord.cs" />
     <Compile Include="Docment\excel\DeriveExcel.cs" />
-    <Compile Include="Docment\excel\ImportExcel.cs" />
     <Compile Include="Extension\CustomerProvider.cs" />
     <Compile Include="Extension\ICustomer.cs" />
     <Compile Include="Extension\ICustomerProvider.cs" />
