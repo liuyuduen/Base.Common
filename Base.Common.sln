@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Sample.Host", "Base.Sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Entity", "Base.Entity\Base.Entity.csproj", "{4B075025-DDAB-497E-88EC-BDAD284BEB8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfServiceLibrary1\WcfServiceLibrary1.csproj", "{8F15E4E0-7942-440F-9DFA-54CA1997179A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{D77620D9-B753-456C-ABFB-C38BD6719C78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{5FE8B194-0C68-4E14-866F-E756D2F263FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,8 +51,20 @@ Global
 		{4B075025-DDAB-497E-88EC-BDAD284BEB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B075025-DDAB-497E-88EC-BDAD284BEB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B075025-DDAB-497E-88EC-BDAD284BEB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F15E4E0-7942-440F-9DFA-54CA1997179A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F15E4E0-7942-440F-9DFA-54CA1997179A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F15E4E0-7942-440F-9DFA-54CA1997179A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F15E4E0-7942-440F-9DFA-54CA1997179A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77620D9-B753-456C-ABFB-C38BD6719C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77620D9-B753-456C-ABFB-C38BD6719C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77620D9-B753-456C-ABFB-C38BD6719C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77620D9-B753-456C-ABFB-C38BD6719C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F15E4E0-7942-440F-9DFA-54CA1997179A} = {5FE8B194-0C68-4E14-866F-E756D2F263FE}
+		{D77620D9-B753-456C-ABFB-C38BD6719C78} = {5FE8B194-0C68-4E14-866F-E756D2F263FE}
 	EndGlobalSection
 EndGlobal
