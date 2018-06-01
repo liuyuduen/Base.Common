@@ -11,10 +11,11 @@ using System.Text;
 
 namespace Base.Utility
 {
-    public static class HttpHelper1
+    public class HttpHelper1
     {
 
         static string smartProxyToken = ConfigHelper.AppSettings("SmartProxyToken");
+
         internal static string HttpPostForSmartProxy(string url, string content)
         {
             HttpWebResponse response = null;
@@ -79,57 +80,7 @@ namespace Base.Utility
                 }
             }
         }
-
-
-        private static string GetErroMsgFromResponse(HttpWebResponse response)
-        {
-            string errMsg = string.Empty;
-            if (response == null)
-            {
-                return errMsg;
-            }
-            var data = new byte[0];
-            if (response != null)
-            {
-                using (var s = response.GetResponseStream())
-                {
-                    Stream stream;
-                    switch (response.ContentEncoding.ToUpperInvariant())
-                    {
-                        case "GZIP":
-                            stream = new GZipStream(s, CompressionMode.Decompress);
-                            break;
-                        case "DEFLATE":
-                            stream = new DeflateStream(s, CompressionMode.Decompress);
-                            break;
-
-                        default:
-                            stream = s;
-                            break;
-                    }
-
-                    using (stream)
-                    {
-                        data = new byte[response.ContentLength > 0 ? response.ContentLength : 0];
-                        byte[] buffer = new byte[1024]; // HACK：每次读取的字节数
-                        int copied = 0;
-                        int n = 0;
-                        while ((n = stream.Read(buffer, 0, buffer.Length)) > 0)
-                        {
-                            if (data.Length < copied + n)
-                                Array.Resize(ref data, copied + n);
-
-                            Array.Copy(buffer, 0, data, copied, n);
-                            copied += n;
-                        }
-                    }
-                }
-            }
-
-            return Encoding.UTF8.GetString(data);
-
-        }
-
+         
         internal static string HttpPostForSmartProxy(string url, byte[] bytes, WebHeaderCollection headers)
         {
             HttpWebResponse response = null;
@@ -194,6 +145,55 @@ namespace Base.Utility
                     response = null;
                 }
             }
+
+        }
+
+        private static string GetErroMsgFromResponse(HttpWebResponse response)
+        {
+            string errMsg = string.Empty;
+            if (response == null)
+            {
+                return errMsg;
+            }
+            var data = new byte[0];
+            if (response != null)
+            {
+                using (var s = response.GetResponseStream())
+                {
+                    Stream stream;
+                    switch (response.ContentEncoding.ToUpperInvariant())
+                    {
+                        case "GZIP":
+                            stream = new GZipStream(s, CompressionMode.Decompress);
+                            break;
+                        case "DEFLATE":
+                            stream = new DeflateStream(s, CompressionMode.Decompress);
+                            break;
+
+                        default:
+                            stream = s;
+                            break;
+                    }
+
+                    using (stream)
+                    {
+                        data = new byte[response.ContentLength > 0 ? response.ContentLength : 0];
+                        byte[] buffer = new byte[1024]; // HACK：每次读取的字节数
+                        int copied = 0;
+                        int n = 0;
+                        while ((n = stream.Read(buffer, 0, buffer.Length)) > 0)
+                        {
+                            if (data.Length < copied + n)
+                                Array.Resize(ref data, copied + n);
+
+                            Array.Copy(buffer, 0, data, copied, n);
+                            copied += n;
+                        }
+                    }
+                }
+            }
+
+            return Encoding.UTF8.GetString(data);
 
         }
 
@@ -270,6 +270,7 @@ namespace Base.Utility
             return pwd.ToString();
 
         }
+
         internal static long GetUnixTimeStamp()
         {
             DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1, 0, 0, 0, 0));

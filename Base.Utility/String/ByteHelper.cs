@@ -55,7 +55,22 @@ namespace Base.Utility
         }
         #endregion
 
+         
+
         #region 使用指定字符集将string转换成byte[]
+
+        /// <summary>
+        /// 将字符串转换为Byte数组
+        /// </summary>
+        /// <param name="CharStr">需要转换的字符串</param>
+        /// <param name="CharType">编码方式[utf-8;gb2312]</param>
+        /// <returns>返回Byte数组对象</returns>
+        public static byte[] StringToBytes(string CharStr, string CharType = "utf-8")
+        {
+            Encoding myEncoding = Encoding.GetEncoding(CharType);
+            return myEncoding.GetBytes(CharStr);
+        }
+
         /// <summary>
         /// 使用指定字符集将string转换成byte[]
         /// </summary>
@@ -68,6 +83,18 @@ namespace Base.Utility
         #endregion
 
         #region 使用指定字符集将byte[]转换成string
+
+        /// <summary>
+        /// 使用指定字符集将byte[]转换成string
+        /// </summary>
+        /// <param name="bytes">要转换的字节数组</param>
+        /// <param name="CharType">字符编码</param>
+        public static string BytesToString(byte[] bytes, string CharType = "utf-8")
+        {
+            Encoding myEncoding = Encoding.GetEncoding(CharType);
+            return myEncoding.GetString(bytes);
+        }
+
         /// <summary>
         /// 使用指定字符集将byte[]转换成string
         /// </summary>

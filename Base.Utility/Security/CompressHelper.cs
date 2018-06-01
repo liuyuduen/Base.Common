@@ -6,6 +6,7 @@ using ICSharpCode.SharpZipLib.Zip.Compression;
 using System.IO;
 using ICSharpCode.SharpZipLib.GZip;
 using ICSharpCode.SharpZipLib.BZip2;
+using System.IO.Compression;
 
 namespace Base.Utility
 {
@@ -78,6 +79,53 @@ namespace Base.Utility
             return ByteToString(mMemory.ToArray());
         }
 
+
+
+
+        /// <summary>
+        /// 使用 GZip 压缩数据
+        /// </summary>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
+        public static byte[] Compress(byte[] bytes)
+        {
+            if (bytes == null)
+                throw new ArgumentNullException();
+
+            if (bytes.Length == 0)
+                return bytes;
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                var compressedzipStream = new GZipStream(ms, CompressionMode.Compress, true);
+                compressedzipStream.Write(bytes, 0, bytes.Length);
+                compressedzipStream.Close();
+                return ms.ToArray();
+            }
+        }
+
+        /// <summary>
+        /// 解压 GZip 数据
+        /// </summary>
+        /// <param name="bytes"></param>
+        /// <returns></returns>
+        public static byte[] Decompress(byte[] bytes)
+        {
+            using (var s = new MemoryStream(bytes))
+            {
+                var gz = new GZipStream(s, CompressionMode.Decompress);
+                byte[] buffer = new byte[1024];
+                using (var outBuffer = new MemoryStream())
+                {
+                    int n = 0;
+                    while ((n = gz.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        outBuffer.Write(buffer, 0, n);
+                    }
+                    return outBuffer.ToArray();
+                }
+            }
+        }
 
         private static string ByteToString(Byte[] pBytes)
         {
