@@ -68,7 +68,8 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\Lib\Microsoft.Office.Interop.Word.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
@@ -79,9 +80,11 @@
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -106,9 +109,13 @@
     <Compile Include="Extension\IManageUser.cs" />
     <Compile Include="Extension\ManageProvider.cs" />
     <Compile Include="Http\HttpHelper1.cs" />
+    <Compile Include="Json\IncludePrivateStateContractResolver.cs" />
+    <Compile Include="Json\ValueTypeConverter.cs" />
     <Compile Include="Json\JsonMessage.cs" />
     <Compile Include="Log\ILogHelp.cs" />
     <Compile Include="Log\LogHelp.cs" />
+    <Compile Include="Proxy\WebServiceInvoker.cs" />
+    <Compile Include="Reflection\ReflectionHelper.cs" />
     <Compile Include="Security\ZipHelper.cs" />
     <Compile Include="Security\CompressHelper.cs" />
     <Compile Include="String\ByteHelper.cs" />
@@ -120,7 +127,6 @@
     <Compile Include="Http\MailHelper.cs" />
     <Compile Include="WebService\ServiceChannelHelper.cs" />
     <Compile Include="WebService\ServiceHostHelper.cs" />
-    <Compile Include="WebService\WebServiceInvoker.cs" />
     <Compile Include="WebService\ServiceHelper.cs" />
     <Compile Include="Validate\HttpText.cs" />
     <Compile Include="Validate\SortHelper.cs" />
@@ -189,9 +195,7 @@
     <Compile Include="Script\ScriptHelper.cs" />
     <Compile Include="Provider\SessionHelper.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Proxy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

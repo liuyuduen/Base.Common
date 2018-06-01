@@ -44,6 +44,12 @@ namespace Base.Utility
         Delete = 3
     }
 
+    public enum JsonDateFormat
+    {
+        MS,
+        ISO
+    }
+
     /// <summary>
     /// 客户端
     /// </summary>
