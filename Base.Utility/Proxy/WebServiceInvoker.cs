@@ -10,6 +10,7 @@ using System.Net.Cache;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Base.Utility.Proxy
 {
@@ -23,16 +24,16 @@ namespace Base.Utility.Proxy
         public const string DEFAULT_HTTP_METHOD = "POST";
 
 
-        public T Invoker<T>(CallArgs reqCall)
+        public static T Invoker<T>(CallArgs reqCall)
         {
-            var content = this.Invoker(reqCall);
+            var content = Invoker(reqCall);
             if (!string.IsNullOrEmpty(content))
                 return (T)JsonHelper.GetObject(content, typeof(T));
             return default(T);
         }
 
 
-        public string Invoker(CallArgs reqCall)
+        public static string Invoker(CallArgs reqCall)
         {
             string content = string.Empty;
 
@@ -53,7 +54,17 @@ namespace Base.Utility.Proxy
             return result;
         }
 
+         
+        public static async Task<string> InvokerAsync(CallArgs reqCall)
+        {
+            return await Task.Run(() => Invoker(reqCall));
+        }
 
+        public static async Task<T> InvokerAsync<T>(CallArgs reqCall)
+        {
+            return await Task.Run(() => Invoker<T>(reqCall));
+        }
+         
         internal static string HttpPostForSmartProxy(HttpReq req)
         {
             HttpWebResponse response = null;
@@ -125,8 +136,7 @@ namespace Base.Utility.Proxy
                 }
             }
         }
-
-
+         
         internal static void SetHttpHeader(WebRequest webRequest, IEnumerable<KeyValuePair<string, string>> headers)
         {
             // 避免多次类型转换
@@ -241,8 +251,7 @@ namespace Base.Utility.Proxy
                 }
             }
         }
-
-
+         
         private static string GetErroMsgFromResponse(HttpWebResponse response)
         {
             string errMsg = string.Empty;
@@ -478,7 +487,9 @@ namespace Base.Utility.Proxy
             /// 是否应跟随重定向响应。见：<seealso cref="System.Net.HttpWebRequest.AllowAutoRedirect"/>
             /// </summary>
             public bool AllowAutoRedirect = true;
-        } 
+        }
+
+
         #endregion
     }
 }
