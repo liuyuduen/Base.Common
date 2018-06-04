@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Base.Sample.Host
+namespace Base.Business
 {
     [DataContract]
     public class UserInterface

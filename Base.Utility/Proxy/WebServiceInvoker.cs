@@ -16,10 +16,9 @@ namespace Base.Utility.Proxy
 {
     public class WebServiceInvoker<T>
     {
-        public const int DEFAULT_HTTP_TIMEOUT = 100 * 1000;
-        public const string SETTINGS_KEY_AppKey = "ppKey";
-        public const string SETTINGS_KEY_ProxyUrl = "ProxyUrl";
-        public const string SETTINGS_KEY_ApiUrl = "ApiUrl";
+        public const int DEFAULT_HTTP_TIMEOUT = 100 * 1000; 
+
+        public static string WEB_SERVICE_URL = ConfigHelper.AppSettings("WEB_SERVICE_URL");
 
         public const string DEFAULT_HTTP_METHOD = "POST";
 
@@ -386,6 +385,10 @@ namespace Base.Utility.Proxy
         #region 辅助类
         public class CallArgs
         {
+            /// <summary>
+            /// 为空或 null 时将自动从 /appSettings/add[key=ProxyUrl|ApiUrl] 获取。
+            /// </summary>
+            public string Url { get; set; }
             public string Service { get; set; }
             public string Action { get; set; }
             public string Body { get; set; }
@@ -393,10 +396,7 @@ namespace Base.Utility.Proxy
             /// 将会直接以 HTTP HEAD 的形式传递给 Proxy 的头，如<see cref="ClientInfo"/> 信息（形如 WebLoginUser、WebTrueLoginUser 等由 RIO 定义）。
             /// </summary>
             public Dictionary<string, string> HttpHeaders { get; set; }
-            /// <summary>
-            /// 名为 ASF-REQ-HttpHeaders 的 HTTP 头的值，会是多个键值对。这些键值对将会重新构造为 HTTP HEAD 的形式通过 Proxy 传入业务服务。
-            /// </summary>
-            public Dictionary<string, string> BizHttpHeaders { get; set; }
+
             public bool ThrowException { get; set; }
             public bool DisableCache { get; set; }
             public int Timeout
@@ -422,10 +422,7 @@ namespace Base.Utility.Proxy
             /// 为空或 null 时将自动从 /appSettings/add[key=AppKey] 获取。
             /// </summary>
             public string AppKey { get; set; }
-            /// <summary>
-            /// 为空或 null 时将自动从 /appSettings/add[key=ProxyUrl|ApiUrl] 获取。
-            /// </summary>
-            public string Url { get; set; }
+
 
             /// <summary>
             /// 为空或 null 时将自动获取
