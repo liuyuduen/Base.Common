@@ -197,7 +197,7 @@ namespace Base.Utility
         /// <returns>bool</returns>
         public static bool IsInvalidDateTime(DateTime dt)
         {
-             
+
             return (dt.ToString("yyyy-MM-dd") == InvalidDateTime.ToString("yyyy-MM-dd"));
         }
     }

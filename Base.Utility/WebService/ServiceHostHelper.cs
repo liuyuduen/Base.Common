@@ -15,7 +15,12 @@ namespace Base.Utility
     /// <typeparam name="T">服务接口实现类</typeparam>
     public class ServiceHostHelper<I, T>
     {
-        public static void GetServiceHost(string baseurl, string endpoindurl)
+        /// <summary>
+        /// 开启服务方法
+        /// </summary>
+        /// <param name="baseurl">服务根地址</param>
+        /// <param name="endpoindurl">通信方式</param>
+        public static void GetServiceHost(string apiUrl)
         {
             Binding bind = null;
 
@@ -31,8 +36,8 @@ namespace Base.Utility
                     bind = new NetTcpBinding();
                     break;
             }
-            ServiceHost host = new ServiceHost(typeof(T), new Uri(baseurl));
-            host.AddServiceEndpoint(typeof(I), bind, endpoindurl);
+            ServiceHost host = new ServiceHost(typeof(T), new Uri(apiUrl));
+            host.AddServiceEndpoint(typeof(I), bind, apiUrl);
 
             //公布元数据
             host.Description.Behaviors.Add(new ServiceMetadataBehavior() { HttpGetEnabled = true });

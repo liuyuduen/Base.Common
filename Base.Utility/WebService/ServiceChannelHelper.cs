@@ -9,7 +9,7 @@ namespace Base.Utility
 {
     public class ServiceChannelHelper<T>
     {
-        public static T GetMethod(string endpoindurl)
+        public static T GetMethod(string apiUrl)
         {
             Binding bind = null;
 
@@ -26,7 +26,7 @@ namespace Base.Utility
                     break;
             }
 
-            ChannelFactory<T> factory = new ChannelFactory<T>(bind, endpoindurl);
+            ChannelFactory<T> factory = new ChannelFactory<T>(bind, apiUrl);
 
             return factory.CreateChannel();
         }

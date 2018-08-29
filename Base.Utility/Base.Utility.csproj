@@ -120,7 +120,7 @@
     <Compile Include="Reflection\ReflectionHelper.cs" />
     <Compile Include="Security\ZipHelper.cs" />
     <Compile Include="Security\CompressHelper.cs" />
-    <Compile Include="String\ByteHelper.cs" />
+    <Compile Include="Byte\ByteHelper.cs" />
     <Compile Include="Http\IpHelper.cs" />
     <Compile Include="Http\IPScanerHelper.cs" />
     <Compile Include="Json\JsonHelper.cs" />
@@ -179,7 +179,7 @@
     <Compile Include="Security\DESEncryptHelper.cs" />
     <Compile Include="Security\Md5Helper.cs" />
     <Compile Include="Security\SecurityHelper.cs" />
-    <Compile Include="String\DateHelper.cs" />
+    <Compile Include="DateTime\DateHelper.cs" />
     <Compile Include="Validate\FormatHelper.cs" />
     <Compile Include="String\PinyinHelper.cs" />
     <Compile Include="String\RandomHelper.cs" />

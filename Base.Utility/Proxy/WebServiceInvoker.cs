@@ -12,11 +12,11 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Base.Utility.Proxy
+namespace Base.Utility
 {
-    public class WebServiceInvoker<T>
+    public static class WebServiceInvoker
     {
-        public const int DEFAULT_HTTP_TIMEOUT = 100 * 1000; 
+        public const int DEFAULT_HTTP_TIMEOUT = 100 * 1000;
 
         public static string WEB_SERVICE_URL = ConfigHelper.AppSettings("WEB_SERVICE_URL");
 
@@ -43,6 +43,8 @@ namespace Base.Utility.Proxy
             var httpReq = new HttpReq()
             {
                 Url = reqCall.Url,
+                ContentType = "text/xml; charset=utf-8",
+                Accept = "text/xlm",
                 Headers = reqCall.HttpHeaders,
                 Method = DEFAULT_HTTP_METHOD,
                 Body = bytes,
@@ -53,7 +55,7 @@ namespace Base.Utility.Proxy
             return result;
         }
 
-         
+
         public static async Task<string> InvokerAsync(CallArgs reqCall)
         {
             return await Task.Run(() => Invoker(reqCall));
@@ -63,7 +65,7 @@ namespace Base.Utility.Proxy
         {
             return await Task.Run(() => Invoker<T>(reqCall));
         }
-         
+
         internal static string HttpPostForSmartProxy(HttpReq req)
         {
             HttpWebResponse response = null;
@@ -135,7 +137,7 @@ namespace Base.Utility.Proxy
                 }
             }
         }
-         
+
         internal static void SetHttpHeader(WebRequest webRequest, IEnumerable<KeyValuePair<string, string>> headers)
         {
             // 避免多次类型转换
@@ -250,7 +252,7 @@ namespace Base.Utility.Proxy
                 }
             }
         }
-         
+
         private static string GetErroMsgFromResponse(HttpWebResponse response)
         {
             string errMsg = string.Empty;
@@ -473,7 +475,7 @@ namespace Base.Utility.Proxy
             /// <summary>
             /// 请求的超时时间，为“0”时将采用默认值。见：<seealso cref="System.Net.HttpWebRequest.Timeout"/>
             /// </summary>
-            public int Timeout = DEFAULT_HTTP_TIMEOUT;
+            public int Timeout = 1000;
 
             /// <summary>
             /// 请求体正文
@@ -489,4 +491,5 @@ namespace Base.Utility.Proxy
 
         #endregion
     }
+
 }
