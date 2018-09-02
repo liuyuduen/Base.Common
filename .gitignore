@@ -315,3 +315,4 @@ OpenCover/
 /Test
 *.txt
 *.cache
+Base.DataAccess/obj/Debug/Base.DataAccess.csproj.FileListAbsolute.txt
