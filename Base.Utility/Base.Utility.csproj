@@ -95,10 +95,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\ADHelper.cs" />
+    <Compile Include="Common\CmdHelper.cs" />
     <Compile Include="Common\ExceptionHelper.cs" />
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\Objects.cs" />
     <Compile Include="Common\PathHelper.cs" />
+    <Compile Include="Common\SysHelper.cs" />
     <Compile Include="Convert\EntityObjectExtentions.cs" />
     <Compile Include="Convert\DataToEntityHelper.cs" />
     <Compile Include="Docment\excel\ImportExcel.cs" />

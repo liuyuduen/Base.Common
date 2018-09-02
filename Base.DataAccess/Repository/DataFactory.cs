@@ -40,7 +40,7 @@ namespace Base.DataAccess.Repository
         /// <returns></returns>
         public static IDatabase Database()
         {
-            return Database(ConfigHelper.DB_CONNECTION_STRING);
+            return Database(ConfigHelper.DbConnectionString);
         }
     }
 }

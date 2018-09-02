@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Base.DataAccess.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Base.DataAccess.Repository
+namespace Base.DataAccess
 {
     /// <summary>
     /// 通用的Repository工厂
@@ -11,6 +12,7 @@ namespace Base.DataAccess.Repository
     /// <typeparam name="T"></typeparam>
     public class RepositoryFactory<T> where T : new()
     {
+
         /// <summary>
         /// 定义通用的Repository
         /// </summary>

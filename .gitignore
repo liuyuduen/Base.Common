@@ -313,3 +313,5 @@ OpenCover/
 
 
 /Test
+*.txt
+*.cache
